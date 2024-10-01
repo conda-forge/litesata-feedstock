@@ -1,6 +1,6 @@
 {% set name = "litesata" %}
-{% set version = "2024.04" %}
-{% set sha256 = "8782b78c4980f196c981cd3aa54248fd1cd95057e70265655ff636970a99bcbd" %}
+{% set version = "2024.08" %}
+{% set sha256 = "95d66281c7a5980d4f4527eba926e21f295927277b5f12c0be8e5e3d9a23ef65" %}
 
 package:
   name: {{ name|lower }}
@@ -22,10 +22,11 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - setuptools
   run:
     - python >=3.7
-    - litex >=2024.04
-    - liteiclink >=2024.04
+    - litex ~={{ version }}*
+    - liteiclink ~={{ version }}*
     - migen
     - packaging
     - pyyaml
