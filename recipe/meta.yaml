@@ -20,11 +20,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - litex ~={{ version }}*
     - liteiclink ~={{ version }}*
     - migen
@@ -34,6 +34,8 @@ requirements:
 test:
   imports:
     - litesata
+  requires:
+    - python {{ python_min }}
   commands:
     - litesata_gen --help
 
