@@ -1,6 +1,6 @@
 {% set name = "litesata" %}
-{% set version = "2025.08" %}
-{% set sha256 = "d871a149587c71b811075d6ae16549fe19949db10116476508d0fc27aac7034b" %}
+{% set version = "2025.12" %}
+{% set sha256 = "11218ab735e760dc516bb130ce564dd546d4038c4c79e703abd1fac6047d99c2" %}
 
 package:
   name: {{ name|lower }}
